@@ -1,0 +1,92 @@
+/* reset no código css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* hero (imagem de impacto/principal) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('/img/A350-qatar-1.jpg') center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* variáveis */
+:root {
+    --primaria: ;
+    --secundaria: #0B0F19; /* cor das palavras botões */
+    --tercearia: black; /* cor das palavras quando passar o mouse em cima */
+    --quartenaria: rgba(24, 23, 23, 0.18); /* cor em volta da palavra no botão quando passar o mouse em cima*/
+    --destaque: ;
+    --fundo: #F3F4F6;
+    --texto: ;
+    --texto-2: ;
+    --borda: ;
+    --raio: 6px;
+    --sombra: ;
+}
+
+/* */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--fundo);
+}
+
+/* */
+header {
+    margin: 5px;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* */
+nav {
+    display:flex;
+    gap:6px;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+nav a {
+  color: var(--secundaria);
+  padding: 7px 15px;
+  border-radius: var(--raio);
+  transition: background .2s;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+nav a:hover, nav a.ativo {
+  background: var(--quartenaria);
+  color: var(--tercearia);
+}
+
+/* */
+main {
+    flex: 1;
+}
+
+/* */
+.footer-grid {
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* */
+.footer-col {
+    flex:1;
+    min-width:180px;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: center;
+}
