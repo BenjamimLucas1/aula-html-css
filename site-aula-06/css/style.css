@@ -1,0 +1,187 @@
+/* reset no código css */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* hero (imagem de impacto/principal) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/img/A350-qatar-1.jpg') center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Texto H2 que fica no Hero (Imagem principal) */
+.hero-texto {
+    flex: 2;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+/* variáveis */
+:root {
+    --primaria: white;
+    --secundaria: #0B0F19;
+    /* cor das palavras botões */
+    --tercearia: black;
+    /* cor das palavras quando passar o mouse em cima */
+    --quartenaria: rgba(24, 23, 23, 0.18);
+    /* cor em volta da palavra no botão quando passar o mouse em cima*/
+    --quinta: rgb(224, 220, 220);
+    --fundo: #F3F4F6;
+    --fundo-footer: #1e293b;
+    --letra-footer: rgba(255, 255, 255, .7);
+    --sombra: rgb(212, 202, 202);
+    --raio: 6px;
+    --foco-contato: rgba(124,58,237,.15);
+}
+
+/* corpo do texto */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--fundo);
+}
+
+/* */
+header {
+    margin: 5px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* */
+nav {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--secundaria);
+    padding: 7px 15px;
+    border-radius: var(--raio);
+    transition: background .4s;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+nav a:hover {
+    background: var(--quartenaria);
+    color: var(--tercearia);
+}
+
+nav a.ativo {
+    background: var(--quinta);
+    color: var(--tercearia);
+}
+
+/* */
+main {
+    flex: 1;
+}
+
+
+main h2 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* */
+footer {
+    background-color: var(--fundo-footer);
+    color: var(--letra-footer);
+    text-align: center;
+    padding: 28px 20px;
+    font-size: .9rem;
+}
+
+/* */
+.footer-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* */
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* CSS — grade de cards */
+.grade {
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 200px;
+    max-width: 280px;
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    display: flex;
+    padding: 7px;
+    flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+}
+
+section {
+    padding: 100px;
+}
+
+.quemsomosnos {
+    border-left: 5px solid var(--tercearia);
+    padding-left: 12px;
+    font-size:  1.5rem;
+}
+
+/* Campos */
+input, select, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--tercearia);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--tercearia);
+  box-shadow: 0 0 0 3px var(--foco-contato);
+}
+
+.contato {
+    width: 800px;
+    margin: auto;
+}
+
+.entreemcontato {
+    border-left: 5px solid var(--tercearia);
+    padding-left: 12px;
+}

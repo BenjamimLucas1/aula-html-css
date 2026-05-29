@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>✈️ Air Store</title>
+</head>
+
+<!-- corpo da página -->
+
+<body>
+  <!-- cabecalho da página -->
+  <header>
+    <h1>Air Store</h1>
+    <p>Colecione o extraordinário</p>
+  </header>
+
+  <!-- seção só para o hero (imagem principal)-->
+  <section class="hero">
+    <div class="hero-texto">
+      <h2>Airbus A350-1000</h2>
+    </div>
+
+    <!-- deixei como comentário pois na prática guiada pedia um ícone mais achei feio quando coloquei -->
+    <!-- 
+    <div class="hero-icone">
+      ✈️
+    </div>
+    -->
+  </section>
+
+  <!-- navegação da página -->
+  <nav>
+    <a href="index.html" rel="noopener">Início</a>
+    <a href="sobre.html" rel="noopener">Sobre nós</a>
+    <a href="produtos.html" rel="noopener">Produtos</a>
+    <a href="contato.html" class="ativo" rel="noopener">Contato</a>
+  </nav>
+
+  <!-- conteúdo principal da página -->
+  <main>
+    <section class="contato">
+          <h1 class="entreemcontato">Entre em contato</h1>
+    <p>Preencha o formulário abaixo.</p>
+    <form action="obrigado.html" method="get">
+
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <!-- campos virão aqui -->
+      </fieldset>
+    </form>
+    <div class="campo">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required minlength="3">
+    </div>
+
+    <div class="campo">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+    </div>
+    <div class="campo">
+      <label for="assunto">Assunto</label>
+      <select id="assunto" name="assunto" required>
+        <option value="">Selecione...</option>
+        <option value="orcamento">Orçamento</option>
+        <option value="suporte">Suporte técnico</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" minlength="20" required
+        placeholder="Escreva sua mensagem..."></textarea>
+    </div>
+    <div class="campo">
+      <input type="checkbox" id="termos" name="termos" required>
+      <label for="termos">
+        Aceito os
+        <a href="termos.html">termos de uso</a>
+      </label>
+    </div>
+
+    <div class="botoes">
+      <button type="reset">Limpar</button>
+      <button type="submit">Enviar mensagem</button>
+    </div>
+    </section>
+  </main>
+
+  <!-- rodapé da página -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="logo">We make it fly</p>
+        <p>&copy; 2026 Air sote</p>
+      </div>
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <p>📞 (47) 98499-4858</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
